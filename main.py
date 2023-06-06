@@ -11,7 +11,7 @@ logging.basicConfig(format="%(asctime)s %(levelname)s - %(message)s")
 logger.setLevel(logging.DEBUG)
 
 # params
-url = url = 'https://www.bohemians.cz'
+url = 'https://www.bohemians.cz'
 datetime_format = '%Y-%m-%dT%H:%M:%S'
 subreddit_name = 'r/BohemiansPraha'
 client_id = os.getenv('CLIENT_ID')
