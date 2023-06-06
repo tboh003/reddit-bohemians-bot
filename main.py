@@ -34,7 +34,7 @@ def parse_webpage_data(soup: BeautifulSoup) -> dict:
     logger.info('looking for new articles')
     articles_tags = soup.find_all('article', class_='article')
     for article_tag in articles_tags:
-        title = article_tag.find('h2').text.strip()        
+        title = article_tag.find('h2').text.strip()
         date = datetime.strptime(article_tag.find('time')['datetime'], datetime_format)
         link = f'{url}{article_tag.parent["href"]}'
         logger.info(f'found article:\ntitle: {title}\ndate: {date}\nlink :{link}\n')
@@ -44,7 +44,7 @@ def parse_webpage_data(soup: BeautifulSoup) -> dict:
 
 
 def find_new_articles(articles: dict) -> dict:
-    new_articles = []    
+    new_articles = []
     time_baseline = datetime.now() - timedelta(hours=2)
     logger.info(f'looking for latest article published after time baseline: {time_baseline}')
 
