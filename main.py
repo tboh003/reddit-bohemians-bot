@@ -73,8 +73,6 @@ if __name__ == "__main__":
     new_articles = find_new_articles(articles)
     logger.debug(f'new articles:\n{new_articles}')
 
-    logger.info(client_id)
-
     for article in new_articles:
         logger.info(f'posting article {article["title"]} to subreddit {subreddit_name}')
         if noop:
