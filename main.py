@@ -14,12 +14,12 @@ logger.setLevel(logging.DEBUG)
 url = url = 'https://www.bohemians.cz'
 datetime_format = '%Y-%m-%dT%H:%M:%S'
 subreddit_name = 'r/BohemiansPraha'
-client_id = os.getenv('client_id')
-client_secret = os.getenv('client_secret')
-username = os.getenv('username')
-password = os.getenv('password')
-user_agent = os.getenv('user_agent') or "python:bohemka-bot:v0.1 (by u/tomiob)"
-noop = os.getenv('noop') or False
+client_id = os.getenv('CLIENT_ID')
+client_secret = os.getenv('CLIENT_SECRET')
+username = os.getenv('USERNAME')
+password = os.getenv('PASSWORD')
+user_agent = os.getenv('USER_AGENT') or "python:bohemka-bot:v0.1 (by u/tomiob)"
+noop = os.getenv('NOOP') or False
 
 
 def retrieve_webpage(url: str) -> BeautifulSoup:
