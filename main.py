@@ -8,7 +8,7 @@ import os
 # initiate logger
 logger = logging.getLogger(__name__)
 logging.basicConfig(format="%(asctime)s %(levelname)s - %(message)s")
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 # params
 url = 'https://www.bohemians.cz'
