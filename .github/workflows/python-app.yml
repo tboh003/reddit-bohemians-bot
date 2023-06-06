@@ -1,11 +1,8 @@
 name: Run python app on schedule
 
-#on:
-#  schedule:
-#    - cron: '23 */2 * * *'
-
 on:
-  push:
+  schedule:
+    - cron: "23 */2 * * *"
 
 permissions:
   contents: read
